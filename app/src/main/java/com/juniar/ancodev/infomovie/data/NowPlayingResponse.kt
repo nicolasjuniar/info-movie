@@ -8,7 +8,7 @@ data class NowPlayingResponse(
     @SerializedName("page")
     val page: Int?,
     @SerializedName("results")
-    val results: List<Result>?,
+    val results: List<MovieModel>?,
     @SerializedName("total_pages")
     val totalPages: Int?,
     @SerializedName("total_results")
@@ -22,11 +22,11 @@ data class Dates(
     val minimum: String?
 )
 
-data class Result(
+data class MovieModel(
     @SerializedName("adult")
     val adult: Boolean?,
     @SerializedName("backdrop_path")
-    val backdropPath: String?,
+    val backdropPath: String,
     @SerializedName("genre_ids")
     val genreIds: List<Int>?,
     @SerializedName("id")

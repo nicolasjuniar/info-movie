@@ -1,8 +1,8 @@
 package com.juniar.ancodev.infomovie.network
 
 import com.juniar.ancodev.infomovie.data.NowPlayingResponse
-import io.reactivex.Observable
+import io.reactivex.Single
 
 interface Repository {
-    fun getNowPlaying(): Observable<NowPlayingResponse>
+    fun getNowPlaying(): Single<NowPlayingResponse>
 }

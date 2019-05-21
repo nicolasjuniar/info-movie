@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="lineColor">#fafafa</color>
+
+    <color name="titleColor">#212121</color>
+    <color name="lightColor">#757575</color>
+    <color name="description_color">#616161</color>
 </resources>

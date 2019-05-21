@@ -1,12 +1,12 @@
 package com.juniar.ancodev.infomovie.network
 
 import com.juniar.ancodev.infomovie.data.NowPlayingResponse
-import io.reactivex.Observable
-import javax.inject.Inject
+import io.reactivex.Single
 
-class NetworkRepository @Inject constructor(private val networkService: NetworkService) : Repository {
+class NetworkRepository(private val networkService: NetworkService) : Repository {
 
-    override fun getNowPlaying(): Observable<NowPlayingResponse> {
+    override fun getNowPlaying(): Single<NowPlayingResponse> {
         return networkService.getNowPlaying()
     }
 }
+
